@@ -4,7 +4,6 @@ import { Gap } from '@alfalab/core-components/gap';
 import { Typography } from '@alfalab/core-components/typography';
 import { useEffect, useState } from 'react';
 import basket from './assets/basket.png';
-import cards from './assets/cards.png';
 import coin from './assets/coin.png';
 import direction from './assets/direction.png';
 import face from './assets/face.png';
@@ -14,6 +13,7 @@ import hb from './assets/hb.png';
 import light from './assets/light.png';
 import pie from './assets/pie.png';
 import ring from './assets/ring.png';
+import sub from './assets/sub.png';
 import wallet from './assets/wallet.png';
 import { LS, LSKeys } from './ls';
 import { appSt } from './style.css';
@@ -161,20 +161,51 @@ export const App = () => {
         </div>
 
         <Typography.TitleResponsive style={{ marginTop: '1rem' }} tag="h3" view="small" font="system" weight="bold">
-          Добавьте к своей полписке
+          Добавьте к своей подписке
         </Typography.TitleResponsive>
 
         <div className={appSt.boxRow2}>
           <div className={appSt.boxRow2text}>
-            <div>
-              <Typography.Text tag="p" defaultMargins={false} view="primary-medium" style={{ fontWeight: 600 }}>
-                Доход на остаток
-              </Typography.Text>
-              <Typography.Text view="secondary-large" color="secondary">
-                12% на остаток от 100 000 ₽ на брокерском счёте
-              </Typography.Text>
-            </div>
-            <img src={cards} width={96} height={96} alt="cards" />
+            <Typography.TitleResponsive tag="h2" defaultMargins={false} view="medium" font="system" weight="bold">
+              AI подписка
+            </Typography.TitleResponsive>
+            <img src={sub} width={106} height={97} alt="sub" style={{ marginTop: '-16px', marginRight: '-16px' }} />
+          </div>
+
+          <div style={{ marginTop: '-38px' }}>
+            <Typography.Text tag="p" defaultMargins={false} view="primary-small" weight="bold">
+              Ассистент по анализу рынка
+            </Typography.Text>
+            <Typography.Text view="primary-small" color="secondary">
+              ИИ анализирует рынок и подсказывает, как действовать
+            </Typography.Text>
+          </div>
+
+          <div>
+            <Typography.Text tag="p" defaultMargins={false} view="primary-small" weight="bold">
+              Анализ изменения стоимости портфеля
+            </Typography.Text>
+            <Typography.Text view="primary-small" color="secondary">
+              ИИ найдёт причины и объяснит, почему меняется доходность
+            </Typography.Text>
+          </div>
+
+          <div>
+            <Typography.Text tag="p" defaultMargins={false} view="primary-small" weight="bold">
+              Балансировка портфеля
+            </Typography.Text>
+            <Typography.Text view="primary-small" color="secondary">
+              ИИ оценивает активы и даёт рекомендации по улучшению
+            </Typography.Text>
+          </div>
+
+          <div>
+            <Typography.Text tag="p" defaultMargins={false} view="primary-small" weight="bold">
+              Прогнозы по активу
+            </Typography.Text>
+            <Typography.Text view="primary-small" color="secondary">
+              ИИ сформирует прогноз на основе мнений инвесторов и аналитиков
+            </Typography.Text>
           </div>
           <ButtonMobile
             block
@@ -185,7 +216,7 @@ export const App = () => {
               setAdd(!added);
             }}
           >
-            {added ? 'Удалить' : 'Добавить за 150 ₽'}
+            {added ? 'Удалить' : 'Добавить за 349 ₽'}
           </ButtonMobile>
         </div>
 

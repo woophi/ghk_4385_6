@@ -12,16 +12,16 @@ export const ThxLayout = () => {
       <div className={thxSt.container}>
         <img src={sparkles} width={80} height={80} className={thxSt.rocket} />
         <Typography.TitleResponsive font="system" tag="h1" view="small" style={{ margin: '24px 0 12px' }} weight="bold">
-          Не получилось добавить "Доход на остаток"
+          Откройте брокерский счет
         </Typography.TitleResponsive>
         <Typography.Text tag="p" view="primary-medium" defaultMargins={false}>
-          Выбранную опцию невозможно добавить. Следите за новостями, чтобы узнать, когда она станет доступной
+          Для оформления подписки на инвестиции необходимо отрыть брокерский счет
         </Typography.Text>
       </div>
       <Gap size={96} />
       <div className={appSt.bottomBtn}>
         <ButtonMobile href="https://alfa.me/ght" block view="secondary">
-          Буду ждать
+          Открыть счет
         </ButtonMobile>
       </div>
     </>

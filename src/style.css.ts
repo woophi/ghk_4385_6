@@ -49,6 +49,7 @@ const boxRow2 = style({
   borderRadius: '1rem',
   backgroundColor: '#F3F4F5',
   flexDirection: 'column',
+  overflow: 'hidden',
 });
 const boxRow2text = style({
   display: 'flex',
