@@ -12,15 +12,15 @@ export const ThxLayout = () => {
       <div className={thxSt.container}>
         <img src={sparkles} width={80} height={80} className={thxSt.rocket} />
         <Typography.TitleResponsive font="system" tag="h1" view="small" style={{ margin: '24px 0 12px' }} weight="bold">
-          Откройте брокерский счет
+          Не получилось добавить AI Подписку
         </Typography.TitleResponsive>
         <Typography.Text tag="p" view="primary-medium" defaultMargins={false}>
-          Для оформления подписки на инвестиции необходимо отрыть брокерский счет
+          Откройте брокерский счет и попробуйте оформить подписку позднее.
         </Typography.Text>
       </div>
       <Gap size={96} />
       <div className={appSt.bottomBtn}>
-        <ButtonMobile href="https://alfa.me/ght" block view="secondary">
+        <ButtonMobile href="alfabank://investments/open_brokerage_account" block view="secondary">
           Открыть счет
         </ButtonMobile>
       </div>
