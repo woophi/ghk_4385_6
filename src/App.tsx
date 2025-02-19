@@ -115,7 +115,7 @@ export const App = () => {
             Альфа-Смарт
           </Typography.TitleResponsive>
           <Typography.Text style={{ margin: '.5rem 0 2rem', maxWidth: '260px' }} view="primary-medium">
-            Первый месяц — бесплатно. Далее от 299 ₽ в месяц
+            Стоимость — 399 ₽ в месяц
           </Typography.Text>
         </div>
 
