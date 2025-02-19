@@ -215,8 +215,10 @@ export const App = () => {
               window.gtag('event', 'add_4385_var6');
               setAdd(!added);
             }}
+            className={added ? appSt.positiveBtn : undefined}
+            leftAddons={added ? <CDNIcon name="glyph_checkmark-circle_s" /> : undefined}
           >
-            {added ? 'Удалить' : 'Добавить за 349 ₽'}
+            {added ? 'Добавлено' : 'Добавить за 349 ₽'}
           </ButtonMobile>
         </div>
 
