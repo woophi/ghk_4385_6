@@ -161,13 +161,13 @@ export const App = () => {
         </div>
 
         <Typography.TitleResponsive style={{ marginTop: '1rem' }} tag="h3" view="small" font="system" weight="bold">
-          Добавьте к своей подписке
+          Для инвесторов
         </Typography.TitleResponsive>
 
         <div className={appSt.boxRow2}>
           <div className={appSt.boxRow2text}>
-            <Typography.TitleResponsive tag="h2" defaultMargins={false} view="medium" font="system" weight="bold">
-              AI подписка
+            <Typography.TitleResponsive tag="h2" defaultMargins={false} view="small" font="system" weight="bold">
+              Смарт-Инвестиции
             </Typography.TitleResponsive>
             <img src={sub} width={106} height={97} alt="sub" style={{ marginTop: '-16px', marginRight: '-16px' }} />
           </div>
