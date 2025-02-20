@@ -66,7 +66,7 @@ const data = [
 export const App = () => {
   const [loading, setLoading] = useState(false);
   const [added, setAdd] = useState(false);
-  const [thxShow, setThx] = useState(LS.getItem(LSKeys.ShowThx, false));
+  const [thxShow, setThx] = useState(false);
 
   useEffect(() => {
     if (!LS.getItem(LSKeys.UserId, null)) {
@@ -92,12 +92,12 @@ export const App = () => {
     });
   };
 
-  if (LS.getItem(LSKeys.ShowThx, false)) {
-    return <ThxSpinner />;
-  }
-
   if (thxShow) {
     return <ThxLayout />;
+  }
+
+  if (LS.getItem(LSKeys.ShowThx, false)) {
+    return <ThxSpinner />;
   }
 
   return (
